@@ -12,9 +12,9 @@ export function fetchTrending() {
   return fetchWithError(`${BASE_URL}/trending/all/day?api_key=${API_KEY}`);
 }
 
-export function fetcnOnSearch(searchQuery) {
+export function fetcnOnSearch(movieSearch) {
   return fetchWithError(
-    `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${searchQuery}`,
+    `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${movieSearch}`,
   );
 }
 export function fetchMovieDetail(movieId) {
